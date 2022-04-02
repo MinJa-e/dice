@@ -13,7 +13,13 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class LogIn extends StatelessWidget {
+class LogIn extends StatefulWidget{
+
+  @override
+  _LogInState createState() => _LogInState();
+}
+
+class _LogInState extends State<LogIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
