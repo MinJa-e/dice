@@ -26,17 +26,27 @@ class LogIn extends StatefulWidget {
 class _LogInState extends State<LogIn> {
   TextEditingController controller = TextEditingController();
   TextEditingController controller2 = TextEditingController();
+  TextStyle style = TextStyle(color: Color(0xff000000));
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Log in'),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
         centerTitle: true,
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: () {}),
+        leading: IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {},
+            color: Colors.black,
+        ),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.search), onPressed: () {})
+          IconButton(
+              icon: Icon(Icons.search),
+              onPressed: () {},
+              color: Colors.black,
+          )
         ],
       ),
       body: Builder(
